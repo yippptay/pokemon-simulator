@@ -35,13 +35,25 @@
   </div>
 </div>
 
+<div class="ending">
+  <div class="endingcontainer">
+    <img
+    class="introtext"
+    src="./images/empty_text_box.png"
+    width="960px"
+    alt="emptytextbox"
+    />
+    <div class="endingtextbox">X</div>
+  </div>
+  <button class="again" onClick="window.location.reload();">Again?</button>
+</div>
 
 <div class="game">
   <div class="opponent">
     <div class="stats">
 
       <div class="top">
-        <div id="apHP" class="hp-count">100</div>
+        <div id="apHP" class="opponentHp-count">0</div>
       </div>
 
       <span class="opponentName">
@@ -52,14 +64,14 @@
     <img
       class="opponentPokemon"
       src="https://img.pokemondb.net/sprites/black-white/anim/normal/treecko.gif"
-      alt="A sprite of charizard"/>
+      />
   </div>
 
   <div class="player">
     <div class="stats">
 
       <div class="top">
-        <div id="myHP" class="hp-count">100</div>
+        <div id="myHP" class="playerHp-count">0</div>
       </div>
 
       <span class="playerName">
@@ -70,7 +82,7 @@
     <img
       class="playerPokemon"
       src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/mudkip.gif"
-      alt="A gif from blastoises back sprite"/>
+      />
   </div>
 </div>
 
@@ -83,17 +95,20 @@
 
   <!-- movelist -->
   <div class="actions">
-    <button onclick="setTimeout(compPokemon, 2000);">
+    <button class="move1" onclick="pMove1();setTimeout(enemyMove, 2000);setTimeout(endRound, 4000);">
       temp1
     </button>
-    <button onclick="setTimeout(compPokemon, 2000);">temp2</button>
+
+    <button class="move2" onclick="pMove2();setTimeout(enemyMove, 2000);setTimeout(endRound, 4000);">
       temp2
     </button>
-    <button onclick="setTimeout(compPokemon, 2000);">
+
+    <button class="move3" onclick="pMove3();setTimeout(enemyMove, 2000);setTimeout(endRound, 4000);">
       temp3
     </button>
-    <button onclick="setTimeout(compPokemon, 2000);">
-      temp4
+
+    <button class="move4" onclick="">
+      N/A
     </button>
   </div>
 

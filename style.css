@@ -177,11 +177,19 @@ body {
     padding: 12px;
 }
   
-.stats .hp-count:before {
+.stats .playerHp-count:before {
     content: "HP: ";
 }
   
-.stats .hp-count {
+.stats .playerHp-count {
+    float: right;
+}
+
+.stats .opponentHp-count:before {
+    content: "HP: ";
+}
+  
+.stats .opponentHp-count {
     float: right;
 }
   
@@ -199,4 +207,30 @@ body {
 
 .stats .level:before {
     content: "LVL"
+}
+
+.ending {
+    display: none;
+    image-rendering: pixelated;
+    text-align: center;
+}
+
+.endingcontainer {
+    position: relative;
+    text-align: center;
+}
+
+.endingtextbox {
+    color: #606060;
+    text-shadow: 2px 2px #d0d0c8;
+    font-size: 62px;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.again {
+    font-size: 32px;
 }
