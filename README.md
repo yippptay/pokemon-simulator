@@ -36,6 +36,7 @@ Using photoshop...
 - [ ] Sound effects
 - [ ] Exp
 - [ ] More than one pokemon battles at once
+- [ ] Functioning healthbars
 
 
 ### Credit
