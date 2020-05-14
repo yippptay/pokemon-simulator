@@ -4,6 +4,7 @@
 }
 
 * {
+    /* outline-style: dashed; */
     font-family: "pkmnFont";
 }
 
@@ -11,9 +12,31 @@ body {
     background-color: black;
     font-size: 20px;
 }
-  
+
+.intro {
+    image-rendering: pixelated;
+    text-align: center;
+}
+
+.textboxcontainer {
+    position: relative;
+    text-align: center;
+}
+
+.textbox {
+    color: #606060;
+    text-shadow: 2px 2px #d0d0c8;
+    font-size: 62px;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .game {
-    display: block;
+    display: none;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     image-rendering: pixelated;
@@ -44,9 +67,9 @@ body {
     height: 74px;
 }
   
-.opponent .pokemon {
+.opponent .opponentPokemon {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     right: 125px;
     width: 150px;
 }
@@ -68,15 +91,16 @@ body {
     height: 74px;
 }
   
-.player .pokemon {
+.player .playerPokemon {
     position: absolute;
-    left: 170px;
-    bottom: 10px;
-    width: 160px;
+    left: 185px;
+    bottom: 20px;
+    width: 110px;
 }
   
 .box {
-    display: block;
+    display: none;
+    /* display: block; */
     margin-left: auto;
     margin-right: auto;
     image-rendering: pixelated;
@@ -144,6 +168,7 @@ body {
 }
 
 .stats {
+    position: relative;
     font-size: 32px;
     background: transparent;
     border-radius: 8px;
@@ -153,17 +178,25 @@ body {
 }
   
 .stats .hp-count:before {
-    content: 'HP: '
+    content: "HP: ";
 }
   
 .stats .hp-count {
     float: right;
 }
   
-.stats .name {
+.stats .playerName {
+    position: absolute;
     font-weight: bold;
+    left: 50px;
 }
-  
+
+.stats .opponentName {
+    position: absolute;
+    font-weight: bold;
+    left: 25px;
+}
+
 .stats .level:before {
     content: "LVL"
 }

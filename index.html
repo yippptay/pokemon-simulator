@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <head>
-  <title>Pokemon</title>
-  <script type = "text/javascript" src = "./app.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "./style.css" />
+  <title>pow·kei·maan</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
+
+<!-- start the fire -->
+<div class="intro">
+
+  <img
+    class="selector"
+    src="./images/starter.png"
+    width="960px"
+    alt="starters"
+    usemap="#image-map"
+  />
+
+  <map name="image-map">
+    <area class="treecko" title="Treecko" href="#" coords="240,254,48" shape="circle">
+    <area class="torchic" title="Torchic" href="#" coords="480,352,48" shape="circle">
+    <area class="mudkip" title="Mudkip" href="#" coords="720,256,46" shape="circle">
+  </map>
+
+  <div class="textboxcontainer">
+    <img
+    class="introtext"
+    src="./images/empty_text_box.png"
+    width="960px"
+    alt="emptytextbox"
+    />
+    <div class="textbox">PROF. JERRICA is in trouble!&nbsp;&nbsp;&nbsp;Release a 
+      POKEMON and rescue her!</div>
+  </div>
+</div>
+
 
 <div class="game">
   <div class="opponent">
     <div class="stats">
+
       <div class="top">
-        <div id = "apHP" class="hp-count">100</div>
+        <div id="apHP" class="hp-count">100</div>
       </div>
-      <span class="name">
-        &nbsp;&nbsp;&nbsp;Charizard
+
+      <span class="opponentName">
+        tempOpponent
       </span>
     </div>
-    <img class="pokemon" src="http://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif" alt ="A sprite of charizard" />
+
+    <img
+      class="opponentPokemon"
+      src="https://img.pokemondb.net/sprites/black-white/anim/normal/treecko.gif"
+      alt="A sprite of charizard"/>
   </div>
+
   <div class="player">
     <div class="stats">
+
       <div class="top">
-        <div class="pokeballs">
-          <div class="pokeball"></div>
-          <div class="pokeball"></div>
-          <div class="pokeball"></div>
-          <div class="pokeball"></div>
-          <div class="pokeball"></div>
-        </div>
-        <div id = "myHP" class="hp-count">100</div>
+        <div id="myHP" class="hp-count">100</div>
       </div>
-      <span class="name">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blastoise
+
+      <span class="playerName">
+        tempPlayer
       </span>
     </div>
-    <img class="pokemon" src="http://bit.ly/blastoisegif" alt="A gif from blastoises back sprite" />
+
+    <img
+      class="playerPokemon"
+      src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/mudkip.gif"
+      alt="A gif from blastoises back sprite"/>
   </div>
 </div>
+
+
 <div class="box">
-  <div id = "message" class="message">
+  <!-- textbox -->
+  <div id="message" class="message">
     What should Blastoise do?
   </div>
+
+  <!-- movelist -->
   <div class="actions">
-    <button onclick = "waterCannon();setTimeout(compPokemon, 3000);">Water Cannon</button>
-    <button onclick = "waterPulse();setTimeout(compPokemon, 3000);">Water Pulse</button>
-    <button onclick = "surf();setTimeout(compPokemon, 3000);">Surf</button>
-    <button onclick = "tackle();setTimeout(compPokemon, 3000);">Tackle</button>
+    <button onclick="setTimeout(compPokemon, 2000);">
+      temp1
+    </button>
+    <button onclick="setTimeout(compPokemon, 2000);">temp2</button>
+      temp2
+    </button>
+    <button onclick="setTimeout(compPokemon, 2000);">
+      temp3
+    </button>
+    <button onclick="setTimeout(compPokemon, 2000);">
+      temp4
+    </button>
   </div>
-  <div class = "continue"></div>
+
+  <div class="continue"></div>
 </div>
